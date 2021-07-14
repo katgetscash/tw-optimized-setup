@@ -10,6 +10,5 @@ sudo zypper dup --allow-vendor-change --from Packman
 
 sudo zypper install --from Packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec-full vlc-codecs libdvdcss2 faac faad2 x264
 
-sudo zypper ar -f 'http://linuxdownload.adobe.com/linux/x86_64/' AdobeFlash
 sudo zypper refresh
-sudo zypper install flash-player freshplayerplugin chromium-pepper-flash
+sudo zypper install flash-player
