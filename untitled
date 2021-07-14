@@ -1,1 +1,0 @@
-kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/khotkeys,org.kde.kglobalaccel.Component,invokeShortcut,{53468a35-07ff-4ec9-8e93-5dbc0cadbb57}"
