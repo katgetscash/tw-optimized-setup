@@ -1,7 +1,8 @@
 #!/bin/bash
 ## source: https://cubiclenate.com/linux/system-configuration/pre-shared-ssh-key/
 ##https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-
+  echo "MUST BE RUN AS USER"
+  read -n 1 -s -r -p "Press any key to continue,^C to escape."
     ssh-keygen -t rsa
     echo "Copy the public key to your server"
     read -n 1 -s -r -p "Press any key to continue"
