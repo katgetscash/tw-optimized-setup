@@ -9,56 +9,56 @@
   
 ### Performs the following actions:
   
-1) encrypted-rootfs.sh (
-  * sets up single passphrase login prompt on fullly encrypted disk)
-  * must be run as root
+1) encrypted-rootfs.sh 
+    * sets up single passphrase login prompt on fully encrypted disk
+    * must be run as root
 2) custom-apps.sh
-  * decrease swappiness
-  * set default firewall zone
-  * grub timeout to zero
-  * import and enable hosts file ad blocking (Steven Black default list)
-  * configure Kwallet and Gnome Keyring PAM for single passphrase 
-  * snap / flatpak install
-  * fix for GTK global appmenu from home:/trmdi
-  * brave-browser from repo
-  * IBM/Plex install (optionally install nerd-fonts 'blex' for powerline-shell support)
-  * clear font and icon cache
-  * git --push matching (username, email, core editor, and autocorrect)
-  * system update
-  * YAST default application for x-rpm 
-  * install basic apps:
-    * bleachbit 
-    * chromium 
-    * clamav 
-    * htop 
-    * icedtea-web
-    * remmina 
-    * neofetch 
-    * smartmontools 
-    * thunderbird 
-    * yakuake 
-    * youtube-dl 
-    * make 
-    * perl 
-    * kernel-devel 
-    * dkms 
-    * inkscape
-    * krita
-    * scrot 
-    * xbindkeys 
-    * xdotool 
-    * dolphin-plugins 
-    * pgadmin4 
-    * postgresql 
-    * postgresql-contrib 
-    * sqliteman 
-    * nodejs16
-    * libreoffice 
-    * libreoffice-writer-extensions 
-    * google-caladea-fonts
-  * snap install spotify
-  * snap install android-studio
-  * snap install slack
+    * decrease swappiness
+    * set default firewall zone
+    * grub timeout to zero
+    * import and enable hosts file ad blocking (Steven Black default list)
+    * configure Kwallet and Gnome Keyring PAM for single passphrase 
+    * snap / flatpak install
+    * fix for GTK global appmenu from home:/trmdi
+    * brave-browser from repo
+    * IBM/Plex install (optionally install nerd-fonts 'blex' for powerline-shell support)
+    * clear font and icon cache
+    * git --push matching (username, email, core editor, and autocorrect)
+    * system update
+    * YAST default application for x-rpm 
+    * install basic apps:
+      * bleachbit 
+      * chromium 
+      * clamav 
+      * htop 
+      * icedtea-web
+      * remmina 
+      * neofetch 
+      * smartmontools 
+      * thunderbird 
+      * yakuake 
+      * youtube-dl 
+      * make 
+      * perl 
+      * kernel-devel 
+      * dkms 
+      * inkscape
+      * krita
+      * scrot 
+      * xbindkeys 
+      * xdotool 
+      * dolphin-plugins 
+      * pgadmin4 
+      * postgresql 
+      * postgresql-contrib 
+      * sqliteman 
+      * nodejs16
+      * libreoffice 
+      * libreoffice-writer-extensions 
+      * google-caladea-fonts
+    * snap install spotify
+    * snap install android-studio
+    * snap install slack
 3) codecs.sh
   * install codecs:
     * repository setup
@@ -75,13 +75,13 @@
       * libdvdcss
       * flash-player (non-oss) 
  4) heroku-misc.sh
-  * ensurepip for python 2 (2.7, must manually disable EOL nag-messages if sources to .bashrc)
-  * heroku
-    * curl and install heroku cli-assets
-    * heroku login (continue in browser)
-  * freshclam systemctl (if error in systemd target please see bugreport and workaround here ###)
-  * sublime text install from repo)
+    * ensurepip for python 2 (2.7, must manually disable EOL nag-messages if sources to .bashrc)
+    * heroku
+      * curl and install heroku cli-assets
+      * heroku login (continue in browser)
+    * freshclam systemctl (if error in systemd target please see bugreport and workaround here ###)
+    * sublime text install from repo)
 5) pre-shared-key.sh
-  * generate ssh-rsa key
-  * copy to remote server with SCP or other secure method when prompted
-  * be sure id_rsa.pub is removed at end of script
+    * generate ssh-rsa key
+    * copy to remote server with SCP or other secure method when prompted
+    * be sure id_rsa.pub is removed at end of script
