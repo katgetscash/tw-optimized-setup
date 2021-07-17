@@ -1,4 +1,4 @@
-pro# tw-optimized-setup
+# tw-optimized-setup
 ### Tested bug free with package signing
   | architecture        | platform                   |
   | :-------------------|:---------------------------|
