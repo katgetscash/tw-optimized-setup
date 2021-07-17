@@ -55,31 +55,32 @@
      * libreoffice-writer-extensions 
      * google-caladea-fonts
    * `snap install spotify`
-   * `snap install android-studio`
+   * `snap install   android-studio`
    * `snap install slack`
-* codecs.sh
-  * install codecs:
-  * repository setup
-    * from packman:
-      * ffmpeg 
-      * gstreamer-plugins-{good,bad,ugly,libav} 
-      * libavcodec-full 
-      * vlc-codecs 
-      * libdvdcss2 
-      * faac 
-      * faad2 
-      * x264
-      * mozilla 
-      * libdvdcss
-      * flash-player (non-oss) 
-* heroku-misc.sh
-  * ensurepip for python 2 (2.7, must manually disable EOL nag-messages if sources to .bashrc)
-  * heroku
-    * curl and install heroku cli-assets
-    * heroku login (continue in browser)
+  ##### codecs.sh
+    * install codecs:
+    * repository setup
+      * from packman:
+        * ffmpeg 
+        * gstreamer-plugins-{good,bad,ugly,libav} 
+        * libavcodec-full 
+        * vlc-codecs 
+        * libdvdcss2 
+        * faac 
+        * faad2 
+        * x264
+        * mozilla 
+        * libdvdcss
+        * flash-player (non-oss) 
+  ##### heroku-misc.sh
+    * ensurepip for python 2 (2.7, must manually disable EOL nag-messages if sources to .bashrc)
+    * heroku
+      * curl and install heroku cli-assets
+      * heroku login (continue in browser)
     * freshclam systemctl (if error in systemd target please see bugreport and workaround here ###)
     * sublime text install from repo)
-* pre-shared-key.sh
+  ##### pre-shared-key.sh
     * generate ssh-rsa key
     * copy to remote server with SCP or other secure method when prompted
     * be sure id_rsa.pub is removed at end of script
+ 
