@@ -8,7 +8,7 @@ sudo zypper refresh
 
 sudo zypper dup --allow-vendor-change --from Packman
 
-sudo zypper install --from Packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec-full vlc-codecs libdvdcss2 faac faad2 x264
+sudo zypper install --from Packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec-full vlc-codecs  faac faad2 x264 #libdvdcss2
 
 sudo zypper refresh
 sudo zypper install flash-player
