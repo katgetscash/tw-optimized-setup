@@ -70,15 +70,15 @@ sudo zypper --non-interactive refresh
 sudo zypper --non-interactive dist-upgrade --allow-vendor-change
 
 
-## sets YaST Software as default application for .rpm
+#sets YaST Software as default application for .rpm
 if ! [ -f "$HOME/.config/mimeapps.list" ]; then
   echo "[Default Applications]" > $HOME/.config/mimeapps.list
 fi
-if ! [ grep -Fxq "application/x-rpm=org.opensuse.yast.Packager.desktop" "$HOME/.config/mimeapps.list" ]; then
+if ! [ grep -Fxq "application/x-rpm=org.opensuse.yast.Packager.desktop" "$HOME/.config/mimeapps.list"]; then
   sed -i "/Default Applications/a application/x-rpm=org.opensuse.yast.Packager.desktop;" $HOME/.config/mimeapps.list
 fi
 
-sudo zypper in -y bleachbit chromium clamav htop icedtea-web remmina neofetch smartmontools thunderbird yakuake youtube-dl make perl kernel-devel dkms inkscape krita scrot xbindkeys xdotool dolphin-plugins pgadmin4 postgresql postgresql-contrib sqliteman nodejs16 libreoffice libreoffice-writer-extensions google-caladea-fonts
+sudo zypper --non-interactive in bleachbit chromium clamav htop icedtea-web remmina neofetch smartmontools thunderbird yakuake youtube-dl make perl kernel-devel dkms inkscape krita scrot xbindkeys xdotool dolphin-plugins pgadmin4 postgresql postgresql-contrib sqliteman nodejs16 libreoffice libreoffice-writer-extensions google-caladea-fonts
 
 snap install spotify
 snap install android-studio --classic
