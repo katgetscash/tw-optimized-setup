@@ -52,11 +52,11 @@ sudo zypper --gpg-auto-import-keys refresh
 sudo zypper --non-interactive in brave-browser
 
 ## IBM/Plex
-sudo zypper --non-interactive addrepo https://download.opensuse.org/repositories/M17N:fonts/openSUSE_Tumbleweed/M17N:fonts.repo
-sudo zypper --gpg-auto-import-keys refresh
-sudo zypper --non-interactive in ibm-plex-sans-fonts ibm-plex-mono-fonts  ibm-plex-serif-fonts
-rm ~/.cache/icon-cache.kcache
-sudo fc-cache -fv
+# sudo zypper --non-interactive addrepo https://download.opensuse.org/repositories/M17N:fonts/openSUSE_Tumbleweed/M17N:fonts.repo
+# sudo zypper --gpg-auto-import-keys refresh
+# sudo zypper --non-interactive in ibm-plex-sans-fonts ibm-plex-mono-fonts  ibm-plex-serif-fonts
+# rm ~/.cache/icon-cache.kcache
+# sudo fc-cache -fv
 
 ## git --push matching
 sudo zypper --non-interactive in git
